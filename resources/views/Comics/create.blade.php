@@ -10,14 +10,14 @@
         <div class="row">
             <div class="col col-6">
                 <div class="mb-3 m-3">
-                    <label for="titolo" class="form-label">Comic Title</label>
+                    <label for="titolo" class="form-label text-white fw-bold">Comic Title</label>
                     <input type="text" class="form-control" id="title">
                 </div>
             </div>
 
             <div class="col col-6">
                 <div class="mb-3 m-3">
-                    <label for="image" class="form-label">Image</label>
+                    <label for="image" class="form-label text-white fw-bold">Image</label>
                     <input type="text" class="form-control" id="image">
                 </div>
             </div>
@@ -26,13 +26,13 @@
         <div class="row">
             <div class="col">
                 <div class="mb-3 m-3">
-                    <label for="series" class="form-label">Series</label>
+                    <label for="series" class="form-label text-white fw-bold">Series</label>
                     <input type="text" class="form-control" id="series">
                 </div>
             </div>
             <div class="col">
                 <div class="mb-3 m-3">
-                    <label for="type" class="form-label">Type</label>
+                    <label for="type" class="form-label text-white fw-bold">Type</label>
                     <input type="text" class="form-control" id="type">
                 </div>
             </div>
@@ -41,14 +41,14 @@
         <div class="row">
             <div class="col">
                 <div class="mb-3 m-3">
-                    <label for="sale_date" class="form-label">Sale Date</label>
+                    <label for="sale_date" class="form-label text-white fw-bold">Sale Date</label>
                     <input type="text" class="form-control" id="sale_date">
                 </div>
             </div>
 
             <div class="col">
                 <div class="mb-3 m-3">
-                    <label for="price" class="form-label">Price</label>
+                    <label for="price" class="form-label text-white fw-bold">Price</label>
                     <input type="text" class="form-control" id="price">
                 </div>
             </div>
@@ -58,14 +58,14 @@
         <div class="row">
             <div class="col">
                 <div class="mb-3 m-3">
-                    <label for="artists" class="form-label">Artists</label>
+                    <label for="artists" class="form-label text-white fw-bold">Artists</label>
                     <input type="text" class="form-control" id="artists">
                 </div>
             </div>
 
             <div class="col">
                 <div class="mb-3 m-3">
-                    <label for="writers" class="form-label">Writers</label>
+                    <label for="writers" class="form-label text-white fw-bold">Writers</label>
                     <input type="text" class="form-control" id="writers">
                 </div>
             </div>
@@ -74,7 +74,7 @@
         <div class="row">
             <div class="col">
                 <div class="mb-3 m-3">
-                    <label for="description" class="form-label">Description</label>
+                    <label for="description" class="form-label text-white fw-bold">Description</label>
                     <textarea class="form-control" id="description" placeholder="Add a description for the new comic..."></textarea>
                 </div>
             </div>
