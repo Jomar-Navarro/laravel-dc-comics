@@ -16,10 +16,10 @@
             <p class="fw-bold">Artist: {{ $comic->artists }}</p>
             <p class="fw-bold">Writers: {{ $comic->writers }}</p>
             <p>Price: {{ $comic->price }}</p>
+            <button class="btn btn-warning w-25"><a class="link-body-emphasis" href="{{ route('comics.index') }}"><i class="fa-solid fa-person-walking-arrow-loop-left"></i></a></button>
         </div>
 
     </div>
-    <button class="btn btn-warning w-25"><a class="link-body-emphasis" href="{{ route('comics.index') }}"><i class="fa-solid fa-person-walking-arrow-loop-left"></i></a></button>
 </div>
 
 @endsection
