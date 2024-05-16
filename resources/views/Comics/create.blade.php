@@ -6,7 +6,7 @@
     <h1 class="text-center fw-bold">New Comic</h1>
 
     <form action="{{ route('comics.store') }}" method="POST">
-
+    @csrf
         <div class="row">
             <div class="col col-6">
                 <div class="mb-3 m-3">
