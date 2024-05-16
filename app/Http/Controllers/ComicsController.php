@@ -35,20 +35,32 @@ class ComicsController extends Controller
     public function store(Request $request)
     {
 
-        $form_data = $request->all();
+        $data = $request->all();
 
         $new_comic = new Comic();
-            $new_comic->title = $form_data['title'];
-            $new_comic->description = $form_data['description'];
+            $new_comic->title = $data['title'];
+            $new_comic->description = $data['description'];
             $new_comic->slug = Helper::generateSlug($new_comic->title, new Comic());
-            $new_comic->thumb = $form_data['thumb'];
-            $new_comic->price = $form_data['price'];
-            $new_comic->series = $form_data['series'];
-            $new_comic->sale_date = $form_data['sale_date'];
-            $new_comic->type = $form_data['type'];
-            $new_comic->artists = implode(', ', $form_data['artists']);
-            $new_comic->writers = implode(', ', $form_data['writers']);
+            $new_comic->thumb = $data['thumb'];
+            $new_comic->price = $data['price'];
+            $new_comic->series = $data['series'];
+            $new_comic->sale_date = $data['sale_date'];
+            $new_comic->type = $data['type'];
+
+            if (is_array($data['artists'])) {
+            $new_comic->artists = implode(', ', $data['artists']);
+            } else {
+            $new_comic->artists = $data['artists'];
+            }
+
+            if (is_array($data['writers'])) {
+            $new_comic->writers = implode(', ', $data['writers']);
+            } else {
+            $new_comic->writers = $data['writers'];
+            }
             $new_comic->save();
+
+
 
             return redirect()->route('comics.show', $new_comic);
     }

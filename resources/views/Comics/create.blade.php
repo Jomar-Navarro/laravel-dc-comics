@@ -10,15 +10,15 @@
         <div class="row">
             <div class="col col-6">
                 <div class="mb-3 m-3">
-                    <label for="titolo" class="form-label text-white fw-bold">Comic Title</label>
-                    <input type="text" class="form-control" id="title">
+                    <label for="title" class="form-label text-white fw-bold">Comic Title</label>
+                    <input name="title" type="text" class="form-control" id="title">
                 </div>
             </div>
 
             <div class="col col-6">
                 <div class="mb-3 m-3">
-                    <label for="image" class="form-label text-white fw-bold">Image</label>
-                    <input type="text" class="form-control" id="image">
+                    <label for="thumb" class="form-label text-white fw-bold">Image</label>
+                    <input name="thumb" type="text" class="form-control" id="thumb">
                 </div>
             </div>
         </div>
@@ -27,13 +27,13 @@
             <div class="col">
                 <div class="mb-3 m-3">
                     <label for="series" class="form-label text-white fw-bold">Series</label>
-                    <input type="text" class="form-control" id="series">
+                    <input name="series" type="text" class="form-control" id="series">
                 </div>
             </div>
             <div class="col">
                 <div class="mb-3 m-3">
                     <label for="type" class="form-label text-white fw-bold">Type</label>
-                    <input type="text" class="form-control" id="type">
+                    <input name="type" type="text" class="form-control" id="type">
                 </div>
             </div>
         </div>
@@ -42,14 +42,14 @@
             <div class="col">
                 <div class="mb-3 m-3">
                     <label for="sale_date" class="form-label text-white fw-bold">Sale Date</label>
-                    <input type="text" class="form-control" id="sale_date">
+                    <input name="sale_date" type="text" class="form-control" id="sale_date">
                 </div>
             </div>
 
             <div class="col">
                 <div class="mb-3 m-3">
                     <label for="price" class="form-label text-white fw-bold">Price</label>
-                    <input type="text" class="form-control" id="price">
+                    <input name="price" type="text" class="form-control" id="price">
                 </div>
             </div>
         </div>
@@ -59,14 +59,14 @@
             <div class="col">
                 <div class="mb-3 m-3">
                     <label for="artists" class="form-label text-white fw-bold">Artists</label>
-                    <input type="text" class="form-control" id="artists">
+                    <input name="artists" type="text" class="form-control" id="artists">
                 </div>
             </div>
 
             <div class="col">
                 <div class="mb-3 m-3">
                     <label for="writers" class="form-label text-white fw-bold">Writers</label>
-                    <input type="text" class="form-control" id="writers">
+                    <input name="writers" type="text" class="form-control" id="writers">
                 </div>
             </div>
         </div>
@@ -75,7 +75,7 @@
             <div class="col">
                 <div class="mb-3 m-3">
                     <label for="description" class="form-label text-white fw-bold">Description</label>
-                    <textarea class="form-control" id="description" placeholder="Add a description for the new comic..."></textarea>
+                    <textarea name="description" class="form-control" id="description" placeholder="Add a description for the new comic..."></textarea>
                 </div>
             </div>
         </div>
