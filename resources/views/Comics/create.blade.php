@@ -71,12 +71,17 @@
             </div>
         </div>
 
-        <div class="mb-3 m-3">
-            <label for="description" class="form-label">Description</label>
-            <textarea type="text" class="form-control" id="description">
+        <div class="row">
+            <div class="col">
+                <div class="mb-3 m-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea class="form-control" id="description" placeholder="Add a description for the new comic..."></textarea>
+                </div>
+            </div>
         </div>
 
-        <button class="btn btn-success" type="submit">Add New Comic</button>
+        <button class="btn btn-success" type="submit">Submit</button>
+        <button class="btn btn-danger" type="reset">Reset</button>
     </form>
 </div>
 
