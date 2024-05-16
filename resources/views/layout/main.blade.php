@@ -9,7 +9,7 @@
     @vite('resources/js/app.js')
     <title>ComicsShop | @yield('title')</title>
 </head>
-<body>
+<body class="bg-dark">
     @include('partials.header')
 
     <main class="container my-5">
