@@ -8,3 +8,11 @@
 </div>
 
 @endsection
+
+
+@section('title')
+
+Contacts
+
+@endsection
+

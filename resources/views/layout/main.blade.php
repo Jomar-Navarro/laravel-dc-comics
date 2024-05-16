@@ -7,12 +7,12 @@
 
     <!-- Styles -->
     @vite('resources/js/app.js')
-    <title>Template</title>
+    <title>ComicsShop | @yield('title')</title>
 </head>
 <body>
     @include('partials.header')
 
-    <main>
+    <main class="container my-5">
         @yield('content')
     </main>
 
