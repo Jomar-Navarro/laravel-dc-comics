@@ -36,9 +36,9 @@ class ComicsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Comic $comic)
     {
-        //
+        return view('Comics.show', compact('comic'));
     }
 
     /**
@@ -46,7 +46,7 @@ class ComicsController extends Controller
      */
     public function edit(string $id)
     {
-        //
+
     }
 
     /**
