@@ -15,7 +15,7 @@
                 <p class="card-text">{{ $comic->price }}</p>
 
                 <div class="d-flex">
-                    <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-success mx-2"><i class="fa-regular fa-eye"></i> <span>Show Comic Details</span></a>
+                    <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-success mx-2"><i class="fa-regular fa-eye"></i> <span>Show Details</span></a>
                     <button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
                 </div>
             </div>
