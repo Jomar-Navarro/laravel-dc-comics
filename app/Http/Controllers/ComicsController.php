@@ -38,26 +38,30 @@ class ComicsController extends Controller
         $data = $request->all();
 
         $new_comic = new Comic();
-            $new_comic->title = $data['title'];
-            $new_comic->description = $data['description'];
-            $new_comic->slug = Helper::generateSlug($new_comic->title, new Comic());
-            $new_comic->thumb = $data['thumb'];
-            $new_comic->price = $data['price'];
-            $new_comic->series = $data['series'];
-            $new_comic->sale_date = $data['sale_date'];
-            $new_comic->type = $data['type'];
+            // $new_comic->title = $data['title'];
+            // $new_comic->description = $data['description'];
+            // $new_comic->slug = Helper::generateSlug($new_comic->title, new Comic());
+            // $new_comic->thumb = $data['thumb'];
+            // $new_comic->price = $data['price'];
+            // $new_comic->series = $data['series'];
+            // $new_comic->sale_date = $data['sale_date'];
+            // $new_comic->type = $data['type'];
 
-            if (is_array($data['artists'])) {
-            $new_comic->artists = implode(', ', $data['artists']);
-            } else {
-            $new_comic->artists = $data['artists'];
-            }
+            // if (is_array($data['artists'])) {
+            // $new_comic->artists = implode(', ', $data['artists']);
+            // } else {
+            // $new_comic->artists = $data['artists'];
+            // }
 
-            if (is_array($data['writers'])) {
-            $new_comic->writers = implode(', ', $data['writers']);
-            } else {
-            $new_comic->writers = $data['writers'];
-            }
+            // if (is_array($data['writers'])) {
+            // $new_comic->writers = implode(', ', $data['writers']);
+            // } else {
+            // $new_comic->writers = $data['writers'];
+            // }
+
+
+            $data['slug'] = Helper::generateSlug($data['title'], new Comic());
+            $new_comic->fill($data);
             $new_comic->save();
 
 

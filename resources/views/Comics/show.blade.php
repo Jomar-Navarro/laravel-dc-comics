@@ -10,9 +10,10 @@
             <img class="object-fit-contain img-fluid" src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
         </div>
 
-        <div class="col col-8 text-start text-white">
+        <div class="col col-8 text-start text-black">
             <h2 class="fw-bolder">{{ $comic->series }}</h2>
             <p>Description: {{ $comic->description }}</p>
+            <p>Sale Date: {{ $comic->sale_date }}</p>
             <p class="fw-bold">Artist: {{ $comic->artists }}</p>
             <p class="fw-bold">Writers: {{ $comic->writers }}</p>
             <p>Price: {{ $comic->price }}</p>
