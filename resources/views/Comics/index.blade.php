@@ -17,7 +17,9 @@
                 <div class="d-flex justify-content-center align-items-center">
                     <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-success mx-2"><i class="fa-regular fa-eye"></i></a>
                     <a class="btn btn-warning mx-2" href="{{route('comics.edit', $comic->id)}}"><i class="fa-solid fa-pen-to-square"></i></a>
-                    <button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <form action="{{ route('comics.destroy', $comic->id) }}">
+                        <button class="btn btn-danger" type="submit"><i class="fa-solid fa-trash"></i></button>
+                    </form>
                 </div>
             </div>
         </div>

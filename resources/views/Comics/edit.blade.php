@@ -5,8 +5,9 @@
 <div class="container p-5 bg-dark-subtle rounded-5">
     <h1 class="text-center fw-bold">{{ $comic->title}}</h1>
 
-    <form action="{{ route('comics.store') }}" method="POST">
-    @csrf
+    <form action="{{ route('comics.update', $comic->id) }}" method="POST">
+        @csrf
+        @method('PUT')
         <div class="row">
             <div class="col col-6">
                 <div class="mb-3 m-3">
@@ -75,7 +76,7 @@
             <div class="col">
                 <div class="mb-3 m-3">
                     <label for="description" class="form-label fw-bold">Description</label>
-                    <textarea name="description" class="form-control" id="description" placeholder="Add a description for the new comic..." value="{{ $comic->description }}"></textarea>
+                    <textarea name="description" class="form-control" id="description" placeholder="Add a description for the new comic...">{{ $comic->description }}</textarea>
                 </div>
             </div>
         </div>

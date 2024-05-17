@@ -5,8 +5,10 @@
 <div class="container p-5 bg-dark-subtle rounded-5">
     <h1 class="text-center fw-bold">New Comic</h1>
 
-    <form action="{{ route('comics.store') }}" method="POST">
+    <form action="{{ route('comics.update', $comic->id) }}" method="POST">
     @csrf
+    @method('PUT')
+
         <div class="row">
             <div class="col col-6">
                 <div class="mb-3 m-3">
