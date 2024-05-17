@@ -14,8 +14,9 @@
                 <p class="card-text">{{ $comic->series }} | {{ $comic->type }}</p>
                 <p class="card-text">{{ $comic->price }}</p>
 
-                <div class="d-flex">
-                    <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-success mx-2"><i class="fa-regular fa-eye"></i> <span>Show Details</span></a>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-success mx-2"><i class="fa-regular fa-eye"></i></a>
+                    <a class="btn btn-warning mx-2" href="{{route('comics.edit', $comic->id)}}"><i class="fa-solid fa-pen-to-square"></i></a>
                     <button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
                 </div>
             </div>
