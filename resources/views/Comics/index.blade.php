@@ -8,8 +8,8 @@
     <div class="row row-cols-4 d-flex justify-content-center">
         @foreach ($Comics as $comic)
         <div class="card m-2 bg-dark-subtle" style="width: 18rem;">
-            <img src="{{$comic->thumb}}" class="card-img-top object-fit-contain" alt="{{ $comic->title  }}">
-            <div class="card-body d-flex flex-column justify-content-end">
+            <img src="{{$comic->thumb}}" class="card-img-top object-fit-cover  h-100" alt="{{ $comic->title  }}">
+            <div class="card-body d-flex flex-column justify-content-end h-50 ">
                 <h5 class="card-title">{{ $comic->title }}</h5>
                 <p class="card-text">{{ $comic->series }} | {{ $comic->type }}</p>
                 <p class="card-text">{{ $comic->price }}</p>
