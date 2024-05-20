@@ -5,6 +5,16 @@
 <div class="container p-5 bg-dark-subtle rounded-5">
     <h1 class="text-center fw-bold">{{ $comic->title}}</h1>
 
+        @if ($errors->any())
+        <div class="alert alert-danger" role="alert">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
     <form action="{{ route('comics.update', $comic->id) }}" method="POST">
         @csrf
         @method('PUT')
