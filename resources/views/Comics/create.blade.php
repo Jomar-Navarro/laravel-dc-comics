@@ -112,19 +112,10 @@
                     <label for="sale_date" class="form-label fw-bold">Sale Date</label>
                     <input
                       name="sale_date"
-                      type="text"
+                      type="date"
                       class="form-control"
-                      @error('sale_date')
-                            is-invalid
-                        @enderror
                       id="sale_date"
                       value="{{ old('sale_date') }}">
-
-                      @error('sale_date')
-                        <small class="text-danger">
-                            {{ $message }}
-                        </small>
-                    @enderror
                 </div>
             </div>
 

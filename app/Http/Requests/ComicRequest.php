@@ -42,7 +42,6 @@ class ComicRequest extends FormRequest
             'thumb.required' => 'The image is required and cannot be empty',
             'price.required' => 'The price is required and cannot be empty',
             'series.required' => 'The series is required and cannot be empty',
-            'sale_date.required' => 'The sale_date is required and cannot be empty',
             'type.required' => 'The type is required and cannot be empty',
             'artists.required' => 'The artists is required and cannot be empty',
             'writers.required' => 'The writers is required and cannot be empty',
