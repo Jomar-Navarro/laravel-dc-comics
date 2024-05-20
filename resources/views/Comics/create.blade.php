@@ -5,6 +5,8 @@
 <div class="container p-5 bg-dark-subtle rounded-5">
     <h1 class="text-center fw-bold">New Comic</h1>
 
+
+
     <form action="{{ route('comics.update', $comic->id) }}" method="POST">
     @csrf
     @method('PUT')
