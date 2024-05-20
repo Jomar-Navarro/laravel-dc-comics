@@ -22,14 +22,43 @@
             <div class="col col-6">
                 <div class="mb-3 m-3">
                     <label for="title" class="form-label  fw-bold">Comic Title</label>
-                    <input name="title" type="text" class="form-control" id="title" value="{{ $comic->title}}">
+                    <input
+                        name="title"
+                        type="text"
+                        class="form-control"
+                        @error('title')
+                            is-invalid
+                        @enderror
+                        id="title"
+                        value="{{ old('title', $comic->title) }}"
+
+                        >
+                    @error('title')
+                        <small class="text-danger">
+                            {{ $message }}
+                        </small>
+                    @enderror
                 </div>
             </div>
 
             <div class="col col-6">
                 <div class="mb-3 m-3">
                     <label for="thumb" class="form-label fw-bold">Image</label>
-                    <input name="thumb" type="text" class="form-control" id="thumb" value="{{ $comic->thumb}}">
+                    <input
+                      name="thumb"
+                      type="text"
+                      class="form-control"
+                      @error('thumb')
+                            is-invalid
+                        @enderror
+                      id="thumb"
+                      value="{{ old('thumb', $comic->thumb) }}">
+
+                      @error('thumb')
+                        <small class="text-danger">
+                            {{ $message }}
+                        </small>
+                    @enderror
                 </div>
             </div>
         </div>
@@ -38,13 +67,41 @@
             <div class="col">
                 <div class="mb-3 m-3">
                     <label for="series" class="form-label fw-bold">Series</label>
-                    <input name="series" type="text" class="form-control" id="series" value="{{ $comic->series}}">
+                    <input
+                      name="series"
+                      type="text"
+                      class="form-control"
+                      @error('series')
+                            is-invalid
+                        @enderror
+                      id="series"
+                      value="{{ old('series', $comic->series) }}">
+
+                      @error('series')
+                        <small class="text-danger">
+                            {{ $message }}
+                        </small>
+                    @enderror
                 </div>
             </div>
             <div class="col">
                 <div class="mb-3 m-3">
                     <label for="type" class="form-label fw-bold">Type</label>
-                    <input name="type" type="text" class="form-control" id="type" value="{{ $comic->type}}">
+                    <input
+                      name="type"
+                      type="text"
+                      class="form-control"
+                      @error('type')
+                            is-invalid
+                        @enderror
+                      id="type"
+                      value="{{ old('type', $comic->type) }}">
+
+                      @error('type')
+                        <small class="text-danger">
+                            {{ $message }}
+                        </small>
+                    @enderror
                 </div>
             </div>
         </div>
@@ -53,14 +110,33 @@
             <div class="col">
                 <div class="mb-3 m-3">
                     <label for="sale_date" class="form-label fw-bold">Sale Date</label>
-                    <input name="sale_date" type="text" class="form-control" id="sale_date" value="{{ $comic->sale_date}}">
+                    <input
+                      name="sale_date"
+                      type="date"
+                      class="form-control"
+                      id="sale_date"
+                      value="{{ old('sale_date') }}">
                 </div>
             </div>
 
             <div class="col">
                 <div class="mb-3 m-3">
                     <label for="price" class="form-label fw-bold">Price</label>
-                    <input name="price" type="text" class="form-control" id="price" value="{{ $comic->price}}">
+                    <input
+                      name="price"
+                      type="text"
+                      class="form-control"
+                      @error('price')
+                            is-invalid
+                        @enderror
+                      id="price"
+                      value="{{ old('price', $comic->price) }}">
+
+                      @error('price')
+                        <small class="text-danger">
+                            {{ $message }}
+                        </small>
+                    @enderror
                 </div>
             </div>
         </div>
@@ -70,14 +146,42 @@
             <div class="col">
                 <div class="mb-3 m-3">
                     <label for="artists" class="form-label fw-bold">Artists</label>
-                    <input name="artists" type="text" class="form-control" id="artists" value="{{ $comic->artists}}">
+                    <input
+                      name="artists"
+                      type="text"
+                      class="form-control"
+                      @error('artists')
+                            is-invalid
+                        @enderror
+                      id="artists"
+                      value="{{ old('artists', $comic->artists) }}">
+
+                      @error('artists')
+                        <small class="text-danger">
+                            {{ $message }}
+                        </small>
+                    @enderror
                 </div>
             </div>
 
             <div class="col">
                 <div class="mb-3 m-3">
                     <label for="writers" class="form-label fw-bold">Writers</label>
-                    <input name="writers" type="text" class="form-control" id="writers" value="{{ $comic->writers}}">
+                    <input
+                      name="writers"
+                      type="text"
+                      class="form-control"
+                      @error('writers')
+                            is-invalid
+                        @enderror
+                      id="writers"
+                      value="{{ old('writers', $comic->writers) }}">
+
+                      @error('writers')
+                        <small class="text-danger">
+                            {{ $message }}
+                        </small>
+                    @enderror
                 </div>
             </div>
         </div>
@@ -86,7 +190,7 @@
             <div class="col">
                 <div class="mb-3 m-3">
                     <label for="description" class="form-label fw-bold">Description</label>
-                    <textarea name="description" class="form-control" id="description" placeholder="Add a description for the new comic...">{{ $comic->description }}</textarea>
+                    <textarea name="description" class="form-control" id="description" placeholder="Add a description for the new comic...">{{ old('description', $comic->description) }}</textarea>
                 </div>
             </div>
         </div>
